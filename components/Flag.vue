@@ -1,6 +1,8 @@
 <template>
   <div class="rabbit-container" :style="{left: left + 'px'}">
-    <emojione-monotone-flag-for-chequered-flag />
+    <RabbitAddonIcon :src="$slidev.configs?.rabbit?.flagIcon">
+      <emojione-monotone-flag-for-chequered-flag />
+    </RabbitAddonIcon>
   </div>
 </template>
 

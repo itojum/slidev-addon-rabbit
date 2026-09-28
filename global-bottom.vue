@@ -1,7 +1,7 @@
 <template>
   <!-- when exporting, this footer isn't exported -->
   <footer
-    v-if="$route.query.print !== null && $route.query.time"
+    v-if="$route.query.print === undefined && $route.name !== 'export' && ($route.query.time || $slidev.configs?.rabbit?.time)"
     class="rablte-container"
   >
     <Flag :left="goalPosition"/>

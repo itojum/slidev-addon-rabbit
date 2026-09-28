@@ -1,6 +1,8 @@
 <template>
   <div class="rabbit-container" :style="{left: pos + 'px'}">
-    <emojione-monotone-rabbit class="icon" />
+    <RabbitAddonIcon :src="$slidev.configs?.rabbit?.rabbitIcon" flip>
+      <emojione-monotone-rabbit class="icon" />
+    </RabbitAddonIcon>
     <div
       class="py-1 px-1 text-xs bg-white bg-opacity-20 rounded-md text-center"
       :class="[isLatter ? 'float-left' : 'float-right']"

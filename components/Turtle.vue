@@ -1,6 +1,8 @@
 <template>
   <div class="rabbit-container" :style="{left: left + 'px'}">
-    <emojione-monotone-turtle class="icon" />
+    <RabbitAddonIcon :src="$slidev.configs?.rabbit?.turtleIcon" flip>
+      <emojione-monotone-turtle class="icon" />
+    </RabbitAddonIcon>
   </div>
 </template>
 
@@ -11,7 +13,8 @@ export default {
   },
   data() {
     const maxWidth = this.$slidev.configs.canvasWidth - 20; // 20 is margin-right
-    const time = this.$route?.query?.time || 10;
+    // URL query (?time=) takes precedence over the `rabbit.time` config
+    const time = this.$route?.query?.time || this.$slidev.configs?.rabbit?.time || 10;
     return {
       left: 0,
       intervalId: null,

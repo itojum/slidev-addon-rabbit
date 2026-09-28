@@ -20,7 +20,7 @@ As the presentation begins, the rabbit and the turtle aim for the goal. **The ra
 1. Apply `slidev-addon-rabbit` to your slidev project
    - See [Use Addon \| Slidev](https://sli.dev/addons/use.html)
 2. Run slidev (e.g.: `npm run dev`)
-3. Attach url query `?time=10` to presentation url, and access it
+3. Set `rabbit.time` in the headmatter, or attach url query `?time=10` to presentation url, and access it
    - e.g.: `http://localhost:3030/?time=10`
 
 ## Configs

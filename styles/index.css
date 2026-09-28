@@ -4,6 +4,18 @@
     z-index: 99;
 }
 
+.rabbit-addon-image {
+    height: 20px;
+    width: auto;
+    max-width: none;
+}
+
+.rabbit-addon-emoji {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+}
+
 .icon {
     width: 20px;
     height: 20px;
