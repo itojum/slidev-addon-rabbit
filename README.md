@@ -33,6 +33,10 @@ addons:
   - slidev-addon-rabbit
 rabbit:
   slideNum: true   # Show current/total slide numbers next to a rabbit icon
+  time: 5          # Presentation time in minutes (URL query `?time=` takes precedence)
+  rabbitIcon: /rabbit.png  # Custom icon: image path (/, ./, http(s)://, data:) or emoji/text
+  turtleIcon: 🦊
+  flagIcon: 🏁
 ...
 ---
 ```
